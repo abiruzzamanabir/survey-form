@@ -208,7 +208,7 @@
     </h5>
 
     <div class="border p-3 shadow my-3">
-        <p class="text-center">Which 3 competencies/trainings do you believe are most critical for the future of
+        <p>Which 3 competencies/trainings do you believe are most critical for the future of
             marketing in Bangladesh?</p>
 
         @for ($i = 1; $i <= 3; $i++)
@@ -226,7 +226,7 @@
     </h5>
 
     <div class="border p-3 shadow my-3">
-        <p class="text-center">What single change do you think can transform the marketing profession in Bangladesh?</p>
+        <p>What single change do you think can transform the marketing profession in Bangladesh?</p>
 
         <div class="mb-3">
             <textarea name="final_thoughts" class="form-control" rows="4" placeholder="Share your final thoughts..."
@@ -236,8 +236,8 @@
 
 
     {{-- SUBMIT BUTTON --}}
-    <div class="border p-3 shadow my-3 text-center">
-        <button type="submit" class="btn btn-primary px-4">Submit</button>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary w-100 px-4">Submit</button>
     </div>
 </form>
 
