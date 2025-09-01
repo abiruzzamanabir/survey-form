@@ -176,11 +176,12 @@
                                 <input type="number" class="form-control"
                                     name="competencies[{{ $index }}][industry][{{ $level }}]"
                                     value="{{ old("competencies.$index.industry.$level") }}" min="0"
-                                    max="100" required placeholder="e.g. 25%">
+                                    max="100" required placeholder="e.g. {{ rand(0, 100) }}">
                                 <div class="invalid-feedback">Enter {{ ucfirst($level) }} % (0-100).</div>
                             </div>
                         @endforeach
                     </div>
+
 
                     <div class="col-md-6">
                         <h6 class="text-success">My Organization/Team Assessment (%)</h6>
@@ -190,11 +191,12 @@
                                 <input type="number" class="form-control"
                                     name="competencies[{{ $index }}][organization][{{ $level }}]"
                                     value="{{ old("competencies.$index.organization.$level") }}" min="0"
-                                    max="100" required placeholder="e.g. 25%">
+                                    max="100" required placeholder="e.g. {{ rand(0, 100) }}">
                                 <div class="invalid-feedback">Enter {{ ucfirst($level) }} % (0-100).</div>
                             </div>
                         @endforeach
                     </div>
+
                 </div>
             </div>
             <hr>
