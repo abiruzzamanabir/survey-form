@@ -102,13 +102,13 @@
     </h5>
 
     <p class="text-center">For each competency, please distribute 100% across the four maturity levels (Basic / Working
-        / Advanced / Expert).</p>
+        / Advanced).</p>
 
     <ul>
         <li><b>Basic</b> – Competency is largely absent in practice.</li>
         <li><b>Working</b> – Competency is emerging but not consistent.</li>
         <li><b>Advanced</b> – Competency is embedded in most practices.</li>
-        <li><b>Expert</b> – Competency is mastered, driving significant advantage.</li>
+        {{-- <li><b>Expert</b> – Competency is mastered, driving significant advantage.</li> --}}
     </ul>
 
     <div class="border p-3 shadow my-3">
@@ -154,7 +154,7 @@
                 ],
             ];
 
-            $levels = ['basic', 'working', 'advanced', 'expert'];
+            $levels = ['basic', 'working', 'advanced'];
         @endphp
 
         @foreach ($competencies as $index => $competency)
